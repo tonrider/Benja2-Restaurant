@@ -12,6 +12,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         myManage = new MyManage(this);
+
+        //Test add value
+        testAddValue();
+
     }   // Main Method
+
+    private void testAddValue() {
+        myManage.addUser("testUser", "1234", "โดเรมอน");
+        myManage.addFood("ไข่เจียว", "100", "urlFood");
+    }
 
 }   // Main Class
